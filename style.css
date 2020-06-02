@@ -17,31 +17,40 @@ body {
     margin:0 auto;
     border-radius: 10px;
     position: relative;
-    top:20px;
+    top:5px;
     box-shadow: 5px 5px 10px black ;
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
 }
 
 #result {
-    height:30px;
+    height:20px;
+    background-color:pink;
+    
 }
 
 #history {
     text-align: right;
     height: 20px;
-    margin: 0 20px;
-    padding-top: 20px;
+    margin: 0 10px;
+    padding-top: 10px;
     font-size:15px;
     color: #919191;
+    background-color: blue;
 }
 
 #output {
     text-align: right;
-    height: 0px;
-    margin:10px 20px;
+    height: 50px;
     font-size: 30px;
+    background-color: rgb(163, 76, 76);
+    margin:10px 
+
 }
 
 #keyboard {
+    padding: 20px 5px 20px 5px;
     height: 400px;
     display: flex;
     flex-wrap: wrap;
