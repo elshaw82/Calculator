@@ -1,6 +1,10 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #333333;
+    background-color: #efefef;
 }
 
 #container {
@@ -10,51 +14,59 @@ body {
 }
 
 #calculator {
-
-    width:320px;
-    height:520px;
+    width:330px;
+    height:600px;
     background-color: #efefef;
     margin:0 auto;
-    border-radius: 10px;
+    border-radius: 20px;
     position: relative;
     top:5px;
-    box-shadow: 5px 5px 10px black ;
+    box-shadow: 3px 3px 8px rgb(218, 218, 218), -3px -3px 8px #ffffff;
     display:flex;
     flex-direction: column;
-    justify-content: flex-start;
-}
-
-#result {
-    height:20px;
-    background-color:pink;
-    
+    justify-content: center;
 }
 
 #history {
+    position: relative;
+    top:-20px;
+    left:185px;
     text-align: right;
-    height: 20px;
-    margin: 0 10px;
-    padding-top: 10px;
+    height: 40px;
+    width:100px;
+    margin: 20px 10px;
+    padding-right: 10px;
     font-size:15px;
     color: #919191;
-    background-color: blue;
+    background-color: #efefef;
+    border-radius: 50px;
+    box-shadow:2px 5px 5px #ffffff, -5px -5px 5px rgb(218, 218, 218);
 }
 
 #output {
+    position: relative;
+    left:25px;
+    top:-25px;
     text-align: right;
+    width:270px;
     height: 50px;
-    font-size: 30px;
-    background-color: rgb(163, 76, 76);
-    margin:10px 
+    font-size: 25px;
+    background-color: #efefef;
+    margin:5px; 
+    padding:5px 20px 70px 5px;
+    border-radius: 50px;
+    box-shadow:2px 5px 5px #ffffff, -5px -5px 5px rgb(218, 218, 218);
+    font-family: 'Courier New', Courier, monospace;
+    color:#98CBC5;
 
 }
 
 #keyboard {
-    padding: 20px 5px 20px 5px;
-    height: 400px;
+    padding: 10px 2px 20px 2px;
+    height: 350px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content:space-evenly;
 }
 
 .operator, .number, .empty  {
@@ -62,9 +74,18 @@ body {
     height: 50px;
     margin:10px;
     border-radius: 50%;
+    color: #a7a7a7;
     border: none;
     font-weight: bold;
     font-size:16px;
+    background-color: #efefef;
+    box-shadow: 3px 3px 8px rgb(218, 218, 218), -3px -3px 8px #ffffff;
+}
+
+
+
+.operator {
+  color:  #98CBC5;
 }
 
 .operator, .number {
